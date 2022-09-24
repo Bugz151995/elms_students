@@ -1,0 +1,195 @@
+:root {
+  --color1: #7420b9;
+  --color2: #D90368;
+  --color3: #2E294E;
+  --color4: #211d3f;
+  --color5: #FFD400;
+  --color6: #f8f9fa;
+  --color7: #8320d4;
+  --color8: #198754;
+  --color9: #167a4c;
+  --color10: #392fd1;
+  --color11: #342bb4;
+  --color12: #dc3545;
+  --color13: #bb303e;
+}
+
+
+#signinMain {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('http://goanhs-lmsadmin.edu.ph/assets/bg.jpg');
+  background-size: cover;
+  padding: 2rem;
+}
+
+#signinForm {
+  background-color: #531388cc;
+  max-width: 650px;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#signinBrand {
+  width: 150px;
+}
+
+#signinSubmitBtn {
+  background-color: #D90368;
+}
+
+#signinVisitBtn {
+  background-color: #541388;
+  color: white;
+}
+
+#signinDivider {
+  height: 5px;
+  border-radius: 1rem;
+}
+
+.help-block {
+  color: red;
+  font-size: small;
+}
+
+:root {
+  --color-green: #8f6;
+}
+
+.success-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #7a9;
+}
+
+.success-card {
+  background-color: white;
+  border-radius: 1rem;
+  height: 390px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px 10px rgba(#000, 0.05);
+  margin-bottom: 1rem;
+}
+
+.circle,
+.success-circle-border {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.circle {
+  z-index: 1;
+  position: relative;
+  background: white;
+  transform: scale(1);
+  animation: success-anim 700ms ease;
+}
+
+.success-circle-border {
+  z-index: 0;
+  position: absolute;
+  background: var(--color-green);
+  transform: scale(1.1);
+  animation: circle-anim 400ms ease;
+}
+
+@keyframes success-anim {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes circle-anim {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.success::before,
+.success::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: var(--color-green);
+  position: absolute;
+}
+
+.success::before {
+  width: 30px;
+  top: 58%;
+  left: 23%;
+  transform: rotateZ(50deg);
+}
+
+.success::after {
+  width: 56px;
+  top: 50%;
+  left: 35%;
+  transform: rotateZ(-50deg);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #sidebar {
+    left: 0;
+  }
+
+  #topbar {
+    left: 280px;
+    width: calc(100% - 280px);
+  }
+
+  #content {
+    left: 280px;
+    width: calc(100% - 280px);
+    height: calc(100% - 56px);
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
